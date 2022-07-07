@@ -4,6 +4,17 @@ Congratulations you made it this far!
 
 now copy you're ssh key's 'randomart image' and paste it below here:
 
++---[RSA 3072]----+
+| . o    . .      |
+|.o+ .  o + o     |
+|=o    . o o .    |
+|=      . . . . . |
+|.o  . ..S.o   o .|
+|.. + +..o. . .  .|
+|o o * ..o. ...  .|
+| O .E+.. .+ o .. |
+|o +.+o+. o   . ..|
++----[SHA256]-----+
 
 
 
