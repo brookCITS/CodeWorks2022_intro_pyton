@@ -1,7 +1,21 @@
-# CodeWorks2022_intro_pyton
-This repo is home for all of our projects (including the final project)
+# Project 1 - github
 
-All junior developers need to create a github account with their CITS email account and fork this repo.
-https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository
+Congratulations you made it this far!
 
-There are branches for every week containing all the projects and rubric.
+now copy you're ssh key's 'randomart image' and paste it below here:
+
+
+
+
+
+
+Write the code used to change branches:
+
+
+Write the code used to create ssh key:
+
+Write the code you will use to stage these updates:
+
+Write the code and the message you will use when you commit these updates:
+
+Write the code you will use to push these updates:
