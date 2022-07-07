@@ -31,3 +31,21 @@ How do you get out of a python shell?
 
 
 open input_function.py and fix the errors. Make sure the code executes by running 'python input_function.py'. Once you have it working, copy and paste all the text right after the code is executed.
+
+
+Finish the following code
+wages = 3000
+bills = 200
+rent = 600
+food = 200
+savings =
+
+
+
+give the string city = 'Baltimore' write the code
+
+to print out the 4th character in the string
+
+to print out the last character in the string
+
+to print out a slice of the first 4 characters in the string
