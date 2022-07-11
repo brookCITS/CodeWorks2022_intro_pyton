@@ -76,7 +76,7 @@ There are branches for every week containing all the projects and rubric.
 
   1. Add the remote, call it "upstream":
     ```shell
-    git remote add upstream https://github.com/whoever/whatever.git
+    git remote add upstream https://github.com/brookCITS/CodeWorks2022_intro_pyton
     ```
 
   2. Fetch all the branches of that remote into remote-tracking branches (upstream)
