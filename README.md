@@ -38,6 +38,7 @@ wages = 3000
 bills = 200
 rent = 600
 food = 200
+expenses =
 savings =
 
 
@@ -46,6 +47,8 @@ give the string city = 'Baltimore' write the code
 
 to print out the 4th character in the string
 
+
 to print out the last character in the string
+
 
 to print out a slice of the first 4 characters in the string
