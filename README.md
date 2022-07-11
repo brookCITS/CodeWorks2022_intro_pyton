@@ -71,3 +71,32 @@ There are branches for every week containing all the projects and rubric.
 
 - **Pull** from remote:
   - *git pull*
+
+- **How do I update or sync a forked repository on GitHub?**
+
+  1. Add the remote, call it "upstream":
+    ```shell
+    git remote add upstream https://github.com/whoever/whatever.git
+    ```
+
+  2. Fetch all the branches of that remote into remote-tracking branches (upstream)
+    ```shell
+    git fetch upstream
+    ```
+
+  3. Make sure that you're on your master branch (or the branch you want to sync)
+    ```shell
+    git checkout master
+    ```
+
+  4. Rewrite your master branch so that any commits of yours that aren't already in upstream/master are replayed on top of that other branch:
+    ```shell
+    git merge upstream/master
+    ```
+
+
+You may need to force the push in order to push it to your own forked repository on GitHub. You'd do that with:
+    ```shell
+    git push -f origin master
+    ```
+    You only need to use the -f the first time after you've rebased.
