@@ -6,9 +6,9 @@ https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-reposito
 
 There are branches for every week containing all the projects and rubric.
 
-#Cheat Sheet
+##Cheat Sheet
 
-#linux commandes
+###linux commandes
 
 - Change Directory
   cd [file name] : moves you to the specified Directory
@@ -23,6 +23,7 @@ There are branches for every week containing all the projects and rubric.
 - List Files
   ls : lists the files in the current directory
   ls -la : lists all the files (including hidden ones)
+  (for windows cmd it is dir)
 
 - create a new file
   touch [new file name]
