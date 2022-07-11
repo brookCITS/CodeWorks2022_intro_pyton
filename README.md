@@ -6,9 +6,9 @@ https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-reposito
 
 There are branches for every week containing all the projects and rubric.
 
-##Cheat Sheet
+## Cheat Sheet
 
-###linux commandes
+### linux commandes
 
 - Change Directory
   cd [file name] : moves you to the specified Directory
