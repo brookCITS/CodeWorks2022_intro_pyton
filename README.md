@@ -1,102 +1,18 @@
-# CodeWorks2022_intro_pyton
-This repo is home for all of our projects (including the final project)
+# Project 3 - Control Statements
 
-All junior developers need to create a github account with their CITS email account and fork this repo.
-https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository
+1. Read the meaty.py file and write below what each line of code does.
 
-There are branches for every week containing all the projects and rubric.
+2. Write a code that will ask the user to enter two numbers and check if they are equal.
 
-## Cheat Sheet
+3. Write a code that will ask the user to enter an integer and checks if it is even or odd.
 
-### linux commandes
+4.  Write a code that will ask the user to enter their annual income and returns their federal tax bracket and how much they would pay in taxes.
+10% <- $0 to $9,950
+12% <- $9,951 to $40,525
+22% <- $40,526 to $86,375
+24% <- $86,376 to $164,925
+32% <- $164,926 to $209,425
+35% <- $209,426 to $523,600
+37% <- $523,601 or more
 
-- **Change Directory**
-  - cd [file name] : moves you to the specified Directory
-  - cd .. : moves you back to the parent directory
-
-- **Make Directory**
-  - mkdir [new file name]: creates a new directory with the name specified
-
-- **Print Working directory**
-  - pwd: lets you see the current directory you are in
-
-- **List Files**
-  - ls : lists the files in the current directory
-  - ls -la : lists all the files (including hidden ones)
-  (for windows cmd it is dir)
-
-- **create a new file**
-  - touch [new file name]
-  - ex: touch mytext.txt
-
-- **remove**
-  - rm [file name]: deletes a file
-  - rm -r [directory name]: deletes a folder and everything inside of it.
-
-- **cat** [file name]: lets you see the contents of a file
-
-- **Copy**
-  - cp file1 file2: lets you copy the connects of file1 into file2
-
-- **Source**
-  - source [file name]: lets you use environment variables form a source file
-
-
-### git commandes
-
-- **Initializing** an empty git repository
-  - *git init*
-
-- **Cloning** a repository
-  - *git clone [url of repo to be cloned]*
-
-- **Status** of working tree
-  - *git status*
-
-- **Branch**
-  - *git branch* lets you see which branch in the repo you're in
-
-- **Change Branch (Checkout)**
-  - *git checkout [branch name]* lets you change to the specified branch in the repo
-
-- **Staging** files before commit:
-  - *git add [file to be staged]* lets you stage a single file
-  - *git add .*  lets you stage all the changed files
-
-- **Commit** all staged files:
-  - *git commit -m "Commit message"* lets you commit with a message
-
-- **Push** to remote:
-  - *git push*
-
-- **Pull** from remote:
-  - *git pull*
-
-- **How do I update or sync a forked repository on GitHub?**
-
-  1. Add the remote, call it "upstream":
-    ```shell
-    git remote add upstream https://github.com/brookCITS/CodeWorks2022_intro_pyton
-    ```
-
-  2. Fetch all the branches of that remote into remote-tracking branches (upstream)
-    ```shell
-    git fetch upstream
-    ```
-
-  3. Make sure that you're on your master branch (or the branch you want to sync)
-    ```shell
-    git checkout master
-    ```
-
-  4. Rewrite your master branch so that any commits of yours that aren't already in upstream/master are replayed on top of that other branch:
-    ```shell
-    git merge upstream/master
-    ```
-
-
-You may need to force the push in order to push it to your own forked repository on GitHub. You'd do that with:
-    ```shell
-    git push -f origin master
-    ```
-    You only need to use the -f the first time after you've rebased.
+5. Write a program to accept a number from 1 to 7 and display the name of the day like 1 for Sunday , 2 for Monday and so on.
