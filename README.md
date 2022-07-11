@@ -10,33 +10,33 @@ There are branches for every week containing all the projects and rubric.
 
 ### linux commandes
 
-- Change Directory
-  cd [file name] : moves you to the specified Directory
-  cd .. : moves you back to the parent directory
+- **Change Directory**
+  - cd [file name] : moves you to the specified Directory
+  - cd .. : moves you back to the parent directory
 
-- Make Directory
-  mkdir [new file name]: creates a new directory with the name specified
+- **Make Directory**
+  - mkdir [new file name]: creates a new directory with the name specified
 
-- Print Working directory
-  pwd: lets you see the current directory you are in
+- **Print Working directory**
+  - pwd: lets you see the current directory you are in
 
-- List Files
-  ls : lists the files in the current directory
-  ls -la : lists all the files (including hidden ones)
+- **List Files**
+  - ls : lists the files in the current directory
+  - ls -la : lists all the files (including hidden ones)
   (for windows cmd it is dir)
 
-- create a new file
-  touch [new file name]
-  ex: touch mytext.txt
+- **create a new file**
+  - touch [new file name]
+  - ex: touch mytext.txt
 
-- remove
-  rm [file name]: deletes a file
-  rm -r [directory name]: deletes a folder and everything inside of it.
+- **remove**
+  - rm [file name]: deletes a file
+  - rm -r [directory name]: deletes a folder and everything inside of it.
 
-- cat [file name]: lets you see the contents of a file
+- **cat** [file name]: lets you see the contents of a file
 
-- Copy
-  cp file1 file2: lets you copy the connects of file1 into file2
+- **Copy**
+  - cp file1 file2: lets you copy the connects of file1 into file2
 
-- Source
-  source [file name]: lets you use environment variables form a source file
+- **Source**
+  - source [file name]: lets you use environment variables form a source file
