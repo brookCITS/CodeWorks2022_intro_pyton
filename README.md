@@ -40,3 +40,34 @@ There are branches for every week containing all the projects and rubric.
 
 - **Source**
   - source [file name]: lets you use environment variables form a source file
+
+
+### git commandes
+
+- **Initializing** an empty git repository
+  - *git init*
+
+- **Cloning** a repository
+  - *git clone [url of repo to be cloned]*
+
+- **Status** of working tree
+  - *git status*
+
+- **Branch**
+  - *git branch* lets you see which branch in the repo you're in
+
+- **Change Branch (Checkout)**
+  - *git checkout [branch name]* lets you change to the specified branch in the repo
+
+- **Staging** files before commit
+  - *git add [file to be staged]*: lets you stage a single file
+  - *git add .*: lets you stage all the changed files
+
+- **Commit** all staged files:
+  - *git commit -m "Commit message"* lets you commit with a message
+
+- **Push** to remote:
+  - *git push*
+
+- **Pull** from remote:
+  - *git pull*
