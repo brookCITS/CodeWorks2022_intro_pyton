@@ -1,102 +1,43 @@
-# CodeWorks2022_intro_pyton
-This repo is home for all of our projects (including the final project)
+# Project 5 Data Structures
 
-All junior developers need to create a github account with their CITS email account and fork this repo.
-https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository
+## Lists
 
-There are branches for every week containing all the projects and rubric.
+1) Given a list list1 = [100, 200, 300, 400, 500], reverse the order and save it as a new list
 
-## Cheat Sheet
+2) Write a program to add the lists below, index-wise. Create a new list that contains the 0th index item from both lists, then the 1st index item, and so on till the last element.
+list1 = ["M", "na", "i", "Py"]
+list2 = ["y", "me", "s", "thon"]
 
-### linux commandes
+expected output
+list3 = ['My', 'name', 'is', 'Python']
 
-- **Change Directory**
-  - cd [file name] : moves you to the specified Directory
-  - cd .. : moves you back to the parent directory
+3) Given a list of numbers. write a program to turn every item of a list into its square.
+numbers = [1, 2, 3, 4, 5, 6, 7]
 
-- **Make Directory**
-  - mkdir [new file name]: creates a new directory with the name specified
+4) Concatenate two lists in the following order
+list1 = ["Hello ", "Thank you "]
+list2 = ["Dear", "Sir"]
 
-- **Print Working directory**
-  - pwd: lets you see the current directory you are in
+list3 = ['Hello Dear', 'Hello Sir', 'Thank you  Dear', 'Thank you  Sir']
 
-- **List Files**
-  - ls : lists the files in the current directory
-  - ls -la : lists all the files (including hidden ones)
-  (for windows cmd it is dir)
+## Tuple
 
-- **create a new file**
-  - touch [new file name]
-  - ex: touch mytext.txt
+1) Given is a nested tuple. Write a program to modify the first item (22) of a list inside a following tuple to 222
+tuple1 = (11, [22, 33], 44, 55)
 
-- **remove**
-  - rm [file name]: deletes a file
-  - rm -r [directory name]: deletes a folder and everything inside of it.
+2) Counts the number of occurrences of item "the" from a tuple
+tuple1 = ("the", "quick", "brown", "fox", "hit", "the", "road", "by", "the", "water")
 
-- **cat** [file name]: lets you see the contents of a file
+3)Write a program to copy elements 44 and 55 from the following tuple into a new tuple.
+tuple1 = (11, 22, 33, 44, 55, 66)
 
-- **Copy**
-  - cp file1 file2: lets you copy the connects of file1 into file2
+## Sets
+1) Return a new set of identical items from two sets
+set1 = {10, 20, 30, 40, 50}
+set2 = {30, 40, 50, 60, 70}
 
-- **Source**
-  - source [file name]: lets you use environment variables form a source file
+2) Return a set of elements present in Set A or B, but not both
+set1 = {10, 20, 30, 40, 50}
+set2 = {30, 40, 50, 60, 70}
 
-
-### git commandes
-
-- **Initializing** an empty git repository
-  - *git init*
-
-- **Cloning** a repository
-  - *git clone [url of repo to be cloned]*
-
-- **Status** of working tree
-  - *git status*
-
-- **Branch**
-  - *git branch* lets you see which branch in the repo you're in
-
-- **Change Branch (Checkout)**
-  - *git checkout [branch name]* lets you change to the specified branch in the repo
-
-- **Staging** files before commit:
-  - *git add [file to be staged]* lets you stage a single file
-  - *git add .*  lets you stage all the changed files
-
-- **Commit** all staged files:
-  - *git commit -m "Commit message"* lets you commit with a message
-
-- **Push** to remote:
-  - *git push*
-
-- **Pull** from remote:
-  - *git pull*
-
-- **How do I update or sync a forked repository on GitHub?**
-
-  1. Add the remote, call it "upstream":
-    ```shell
-    git remote add upstream https://github.com/brookCITS/CodeWorks2022_intro_pyton
-    ```
-
-  2. Fetch all the branches of that remote into remote-tracking branches (upstream)
-    ```shell
-    git fetch upstream
-    ```
-
-  3. Make sure that you're on your master branch (or the branch you want to sync)
-    ```shell
-    git checkout [branch]
-    ```
-
-  4. Rewrite your master branch so that any commits of yours that aren't already in upstream/master are replayed on top of that other branch:
-    ```shell
-    git merge upstream/master
-    ```
-
-
-You may need to force the push in order to push it to your own forked repository on GitHub. You'd do that with:
-    ```shell
-    git push -f origin master
-    ```
-    You only need to use the -f the first time after you've rebased.
+3) Edit the file common.py so that it can check if two sets have any elements in common. If yes, display the common elements.
