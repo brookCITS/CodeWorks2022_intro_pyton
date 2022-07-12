@@ -2,7 +2,7 @@
 
 ## Lists
 
-1) Given a list list1 = [100, 200, 300, 400, 500], reverse the order and save it as a new list
+1) Given a list list1 = [100, 200, 300, 400, 500], write a code that can reverse the order and save it as a new list
 
 2) Write a program to add the lists below, index-wise. Create a new list that contains the 0th index item from both lists, then the 1st index item, and so on till the last element.
 list1 = ["M", "na", "i", "Py"]
@@ -30,6 +30,13 @@ tuple1 = ("the", "quick", "brown", "fox", "hit", "the", "road", "by", "the", "wa
 
 3)Write a program to copy elements 44 and 55 from the following tuple into a new tuple.
 tuple1 = (11, 22, 33, 44, 55, 66)
+
+4) Write a program which accepts a sequence of comma-separated numbers from console and generate a list and a tuple which contains every number.
+Suppose the following input is supplied to the program:
+34,67,55,33,12,98
+Then, the output should be:
+['34', '67', '55', '33', '12', '98']
+('34', '67', '55', '33', '12', '98')
 
 ## Sets
 1) Return a new set of identical items from two sets
