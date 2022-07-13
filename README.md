@@ -81,19 +81,13 @@ There are branches for every week containing all the projects and rubric.
 
   2. Fetch all the branches of that remote into remote-tracking branches (upstream)
     ```shell
-    git fetch upstream
+    git pull upstream [branch name]
     ```
 
   3. Make sure that you're on your master branch (or the branch you want to sync)
     ```shell
-    git checkout [branch]
+    git checkout [branch name]
     ```
-
-  4. Rewrite your master branch so that any commits of yours that aren't already in upstream/master are replayed on top of that other branch:
-    ```shell
-    git merge upstream/master
-    ```
-
 
 You may need to force the push in order to push it to your own forked repository on GitHub. You'd do that with:
     ```shell
