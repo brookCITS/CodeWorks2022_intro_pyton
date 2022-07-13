@@ -8,6 +8,12 @@
 list1 = ["M", "na", "i", "Py"]
 list2 = ["y", "me", "s", "thon"]
 
+list3 = []
+list3.append(list1[0] + list2[0])
+list3.append(list1[1] + list2[1])
+list3.append(list1[2] + list2[2])
+list3.append(list1[3] + list2[3])
+
 expected output
 list3 = ['My', 'name', 'is', 'Python']
 
@@ -27,9 +33,11 @@ tuple1 = (11, [22, 33], 44, 55)
 
 2) Counts the number of occurrences of item "the" from a tuple
 tuple1 = ("the", "quick", "brown", "fox", "hit", "the", "road", "by", "the", "water")
+count = tuple1.count("the")
 
 3)Write a program to copy elements 44 and 55 from the following tuple into a new tuple.
 tuple1 = (11, 22, 33, 44, 55, 66)
+
 
 4) Write a program which accepts a sequence of comma-separated numbers from console and generate a list and a tuple which contains every number.
 Suppose the following input is supplied to the program:
@@ -42,9 +50,12 @@ Then, the output should be:
 1) Return a new set of identical items from two sets
 set1 = {10, 20, 30, 40, 50}
 set2 = {30, 40, 50, 60, 70}
+set3 = set1.intersection(set2)
 
 2) Return a set of elements present in Set A or B, but not both
 set1 = {10, 20, 30, 40, 50}
 set2 = {30, 40, 50, 60, 70}
+
+set3 = set1.symmetric_difference(set2)
 
 3) Edit the file common.py so that it can check if two sets have any elements in common. If yes, display the common elements.
