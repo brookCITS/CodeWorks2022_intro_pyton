@@ -17,6 +17,11 @@ myDict = dict()
 #------------------------------------#------------------------------------
 #Hints:
 #1) loop through the list
+for word in list:
+    if word not in myDict:
+        myDict.update({ word : 1 })
+    else:
+        myDict[word] = myDict[word] + 1
 
 #2) check if the word is counted or not. if it's not counted add it to the dictionary as a new element but if it is count, update the count.
 
