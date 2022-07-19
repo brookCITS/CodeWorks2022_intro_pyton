@@ -17,4 +17,4 @@ class Character:
     def bonus():
         #your code here
 
-#create 4 instance of this class and test all the methods twice
+#create 4 instance of this class and test all the methods
