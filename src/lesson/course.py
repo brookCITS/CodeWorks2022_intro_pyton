@@ -1,5 +1,7 @@
 #define the class
 class Course:
+
+    
     def __init__(self):
         self.id = ''
         self.name = ''
