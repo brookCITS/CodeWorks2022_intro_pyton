@@ -24,10 +24,10 @@ class Lead(Developer):
         return self.sal*hours + 3*Employee.bonus
 
 emp1 = Employee('John', 20)
-print(emp1.payment(10))
+print(emp1.payment(10)) #300
 
 emp2 = Developer('Jane', 22)
-print(emp2.payment(10))
+print(emp2.payment(10)) #420
 
 emp3 = Lead('Molly', 25)
-print(emp3.payment(10))
+print(emp3.payment(10)) #550

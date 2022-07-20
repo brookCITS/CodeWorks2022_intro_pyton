@@ -46,3 +46,4 @@ R.sides()
 K = Hexagon()
 K.sides()
 # what would happen if we try to creat an instance of the abstract class
+a = Polygon()
