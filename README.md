@@ -1,96 +1,37 @@
-# CodeWorks2022_intro_pyton
-This repo is home for all of our projects (including the final project)
+# Project 11 -- Modules
 
-All junior developers need to create a github account with their CITS email account and fork this repo.
-https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository
+## Guess the number
 
-There are branches for every week containing all the projects and rubric.
-
-## Cheat Sheet
-
-### linux commandes
-
-- **Change Directory**
-  - cd [file name] : moves you to the specified Directory
-  - cd .. : moves you back to the parent directory
-
-- **Make Directory**
-  - mkdir [new file name]: creates a new directory with the name specified
-
-- **Print Working directory**
-  - pwd: lets you see the current directory you are in
-
-- **List Files**
-  - ls : lists the files in the current directory
-  - ls -la : lists all the files (including hidden ones)
-  (for windows cmd it is dir)
-
-- **create a new file**
-  - touch [new file name]
-  - ex: touch mytext.txt
-
-- **remove**
-  - rm [file name]: deletes a file
-  - rm -r [directory name]: deletes a folder and everything inside of it.
-
-- **cat** [file name]: lets you see the contents of a file
-
-- **Copy**
-  - cp file1 file2: lets you copy the connects of file1 into file2
-
-- **Source**
-  - source [file name]: lets you use environment variables form a source file
+Edit the file guess.py and create a python code that imports the 'random' module from the numpy library and asks users to guess the value of a randomly generated integer (if you haven't installed the numpy library yet, please install it now)
+  - generate and save a random number as variable 'rm'
+  - ask the user to input an integer
+  - if the input is less than or greater than the random number, let the user know
+  - if the input matches the random number, print out a congratulations message as the user if they want to play again. based on the response, exit or play the game again (wrap your code in a while loop)
 
 
-### git commandes
+## User Account Management
 
-- **Initializing** an empty git repository
-  - *git init*
+Create a python module named user_acct which opens 'users.json' and saves it as a dictionary of dictionaries and into a variable called users. It should also have the following functions:
+  - createUser(): it has inputs name, email, password1, password2. If the email is not in the dictionary and the two passwords match it will save the into users
 
-- **Cloning** a repository
-  - *git clone [url of repo to be cloned]*
+  ```shell
+  #add new user to dictionary
+  user.update({
+    'user1@email.com': {
+      'name': 'user1',
+      'password': 'Password'
+    }
+  })
 
-- **Status** of working tree
-  - *git status*
+  ```
 
-- **Branch**
-  - *git branch* lets you see which branch in the repo you're in
+  - signIn(): has inputs email and password. Tries to match the email and password with a user in the dictionary. If there is a match, it will print out a welcome message and returns True. Otherwise, it will print out an error message and returns False (don't forget to close the file).
 
-- **Change Branch (Checkout)**
-  - *git checkout [branch name]* lets you change to the specified branch in the repo
+  - changePassword(): has inputs email, CurrentPassword, and newPassword. It calls the signIn() function and passes the email and CurrentPassword. If True is returned, it will update user's password in the dictionary and print's out a confirmation message. Otherwise, it will print out an error message
 
-- **Staging** files before commit:
-  - *git add [file to be staged]* lets you stage a single file
-  - *git add .*  lets you stage all the changed files
+  - updateFile(): has no inputs. It will overwrite 'users.json' file by saving the dictionary into it.
 
-- **Commit** all staged files:
-  - *git commit -m "Commit message"* lets you commit with a message
-
-- **Push** to remote:
-  - *git push*
-
-- **Pull** from remote:
-  - *git pull*
-
-- **How do I update or sync a forked repository on GitHub?**
-
-  1. Add the remote, call it "upstream":
-    ```shell
-    git remote add upstream https://github.com/brookCITS/CodeWorks2022_intro_pyton
-    ```
-
-  2. Fetch all the branches of that remote into remote-tracking branches (upstream)
-    ```shell
-    git pull upstream [branch name]
-    ```
-
-  3. Make sure that you're on your master branch (or the branch you want to sync)
-    ```shell
-    git checkout [branch name]
-    ```
-
-You may need to force the push in order to push it to your own forked repository on GitHub. You'd do that with:
-    ```shell
-    git push -f origin master
-    ```
-    You only need to use the -f the first time after you've rebased.
+  - run the test.py file and do the following:
+    1) add two new users and close the program
+    2) try to sign in using the two users you just created then close the program
+    3) try to update both user's passwords
