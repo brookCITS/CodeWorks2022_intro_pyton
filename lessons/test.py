@@ -1,8 +1,11 @@
-import mymodule
-#import json
+from mymodule import person1
+import json
 
-mymodule.greeting("Brook")
-print("Hello "+mymodule.person1["name"])
+#mymodule.greeting("Brook")
+#print("Hello "+p["name"])
 
-#with open("files/data.json", "w") as file:
-#    json.dump(mymodule.person1, file)
+with open("files/data.json", "r") as file:
+    data = json.load(file)
+#print(data)
+for person in data:
+    print("Hello "+ person["name"])
