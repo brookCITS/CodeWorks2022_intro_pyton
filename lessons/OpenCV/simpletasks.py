@@ -17,7 +17,7 @@ cv2.imwrite('images/candy-gray.jpg', gray_image)
 #cv2.imshow('Grayscale', gray_image)
 #cv2.waitKey(0)
 
-
+#edge detection using the Canny algorithm
 edges = cv2.Canny(gray_image, 100, 200)
 
 #cv2.imwrite('images/obsidian-edges.jpg', edges)
