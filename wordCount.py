@@ -1,6 +1,8 @@
+par = ''
+file = open("files/paragraph.txt")
+for line in file:
+    par = par+line
 
-
-par =
 par = par.replace(',','')
 par = par.replace('\'','')
 
@@ -18,5 +20,8 @@ for word in list:
 
 
 print(myDict)
+
+with open("files/wordcount.txt", 'w') as file:
+    file.writelines(str(myDict))
 
 #your code
