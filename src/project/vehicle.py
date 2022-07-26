@@ -8,15 +8,16 @@ class Vehicle:
     def max_speed(self):
         #your code here
         pass
+
 class Car(Vehicle):
     def max_speed(self):
         #your code here
-        print("max speed is 150")
+        print("max speed of "+self.name+ "is 250")
 
 class Bus(Vehicle):
     def max_speed(self):
         #your code here
-        print("max speed is 250")
+        print("max speed "+self.name+ " is 150")
 #creat instance of the three classes and call the max_speed() function on them
 
 car1 = Vehicle("Tesla", 'black')

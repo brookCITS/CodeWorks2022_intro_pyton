@@ -5,14 +5,16 @@ from lesson.employee import Employee, Developer, Lead
 class Payroll:
 
     #init function
+    def __init__(self, name):
+        self.name = name
+        self.empList = []
 
+    def add_employee(self, employee):
+        self.empList.append(employee)
 
-
-    #add_employee()
-
-
-
-    #get_payroll()
+    def get_payroll(self):
+        for emp in self.empList:
+            print(emp.name + " | " + str(emp.payment(40)))
 
 
 
