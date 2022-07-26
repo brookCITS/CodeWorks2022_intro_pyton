@@ -1,6 +1,1 @@
-{
-  "brook@codeworks.com":{
-    "name":"Brook",
-    "password":"Password1"
-  }
-}
+{"brook@codeworks.com": {"name": "Brook", "password": "Password1"}, "johnn@cw.org": {"name": "John", "password": "password"}}
