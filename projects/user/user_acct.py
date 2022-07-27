@@ -6,7 +6,6 @@ def loadfile():
     try:
         with open("users.json") as file:
             jsonString = json.load(file)
-            print(jsonString)
             users.update(jsonString)
             print("File loaded to program")
             print(users)
@@ -19,14 +18,7 @@ def createUser(name, email, password1, password2):
     if email not in users:
         #Do the passwords match?
         if password1 == password2:
-            users.update(
-                {
-                    email:{
-                        'name':name,
-                        'password': password1
-                    }
-                }
-            )
+            users.update({email:{'name':name,'password': password1}})
             print("Welcome "+name+"!\n\n")
         else:
             print("Error: the passwords do not match\n\n")
