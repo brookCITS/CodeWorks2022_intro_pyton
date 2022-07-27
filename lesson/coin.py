@@ -17,27 +17,22 @@ class Coin(arcade.Sprite):
     def __init__(self, filename, sprite_scaling):
         super().__init__(filename, sprite_scaling)
         self.change_x = 0
-        self.change_y = 0
+        self.change_y = -2
+
+    def restart(self):
+        self.center_y = 600 + random.randrange(600)
+        self.center_x = random.randrange(SCREEN_WIDTH)
+        self.change_y = random.randrange(-7,-2)
 
     def update(self):
         #rotate the coin
         self.angle += self.change_angle
         # Move the coin
-        self.center_x += self.change_x
         self.center_y += self.change_y
 
         # If we are out-of-bounds, then 'bounce'
-        if self.left < 0:
-            self.change_x *= -1
-
-        if self.right > SCREEN_WIDTH:
-            self.change_x *= -1
-
         if self.bottom < 0:
-            self.change_y *= -1
-
-        if self.top > SCREEN_HEIGHT:
-            self.change_y *= -1
+            self.center_y = 600
 
 
 
@@ -87,13 +82,9 @@ class MyGame(arcade.Window):
             coin = Coin("src/images/coin_01.png", SPRITE_SCALING_COIN)
 
             # Position the coin
+            coin.center_y = 600 + random.randrange(600)
             coin.center_x = random.randrange(SCREEN_WIDTH)
-            coin.center_y = random.randrange(SCREEN_HEIGHT)
-
-            coin.change_x = random.randrange(-3, 4)
-
-            coin.change_y = random.randrange(-3, 4)
-
+            coin.change_y = random.randrange(-7,-2)
 
             # Add the coin to the lists
             self.coin_list.append(coin)
@@ -124,7 +115,7 @@ class MyGame(arcade.Window):
 
         # Loop through each colliding sprite, remove it, and add to the score.
         for coin in hit_list:
-            coin.remove_from_sprite_lists()
+            coin.restart()
             self.score += 1
 
 
