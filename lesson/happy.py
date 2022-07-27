@@ -27,9 +27,9 @@ color = (0, 0, 0)
 arcade.draw_circle_filled(x, y, r, color)
 
 x = 300
-y = 280
-width = 120
-height = 100
+y = 250
+width = 220
+height = 155
 color = (0, 0, 0)
 start_angle = 190
 end_angle = 350

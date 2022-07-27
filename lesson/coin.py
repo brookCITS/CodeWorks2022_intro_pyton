@@ -20,6 +20,8 @@ class Coin(arcade.Sprite):
         self.change_y = 0
 
     def update(self):
+        #rotate the coin
+        self.angle += self.change_angle
         # Move the coin
         self.center_x += self.change_x
         self.center_y += self.change_y
